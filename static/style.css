@@ -1,0 +1,510 @@
+/* Body and general styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #dbeafe, #e0f2fe);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.bot-message {
+  background-color: #e6f0ff;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  max-width: 70%;
+  align-self: flex-start;
+}
+
+.user-message {
+  background-color: #d1ffd6;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  max-width: 70%;
+  align-self: flex-end;
+}
+
+.typing-indicator {
+  display: flex;
+  margin: 10px;
+  gap: 4px;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background: #999;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-8px);
+    opacity: 0.3;
+  }
+}
+.chat-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Chat Box */
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* User Message */
+.user-msg {
+  text-align: right;
+  margin-bottom: 12px;
+  color: #1d4ed8;
+  background: #e0f2fe;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 15px 15px 0 15px;
+  max-width: 80%;
+}
+
+/* Bot Message */
+.bot-msg {
+  text-align: left;
+  margin-bottom: 12px;
+  color: #0f172a;
+  background: #e2e8f0;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 15px 15px 15px 0;
+  max-width: 80%;
+}
+
+/* Error Message (Red Background for Bot Errors) */
+.bot-msg.error {
+  color: #dc2626;
+  background-color: #fee2e2;
+}
+
+/* Input Box */
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input Field */
+input[type="text"] {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #94a3b8;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+/* Input Field Focus */
+input[type="text"]:focus {
+  border-color: #2563eb;
+}
+
+/* Send Button */
+button {
+  padding: 10px 20px;
+  background: #0a84ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Typing Indicator */
+.typing {
+  font-style: italic;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/* Timestamp */
+.timestamp {
+  font-size: 0.8em;
+  color: #6b7280;  /* A soft gray for readability */
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+
+/* Bot Status Container */
+.bot-status {
+  display: flex;
+  align-items: center;
+}
+
+/* Green Dot for Online Status */
+#bot-status-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #10b981; /* Green color */
+}
+
+/* Status Text for Bot */
+#bot-status-text {
+  font-weight: bold;
+}
+
+/* Bot Typing Status (Yellow) */
+.bot-status.typing #bot-status-icon {
+  background-color: #ffcc00; /* Yellow for Typing */
+}
+
+/* Typing Status Text (Yellow) */
+.bot-status.typing #bot-status-text {
+  color: #ffcc00; /* Yellow Text */
+}
+
+/* Online Status and Username */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#bot-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#bot-status-text {
+  font-size: 14px;
+  color: #28a745; /* Green for online */
+}
+
+/* Profile Picture Style */
+#bot-profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #10b981; /* Green border */
+}
+
+/* Enhanced Navigation Styles */
+.navbar {
+  background-color: #f6f6ff;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #4a4a4a;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item a:hover {
+  background-color: #7f5af0;
+  color: #fff;
+}
+
+.nav-item i {
+  margin-right: 8px;
+  color: #7f5af0;
+}
+
+/* Profile Section */
+.profile-section {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f7f9ff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.profile-section h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-section p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.profile-card {
+  background-color: #f0f4ff;
+  border: 1px solid #d1d5db;
+  margin: 30px auto -20px auto;
+  padding: 16px 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.profile-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7f5af0;
+}
+
+.profile-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2f2f2f;
+}
+
+.profile-details p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Floating menu for login/register */
+.auth-menu {
+  position: fixed;
+  top: 20%;
+  right: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  z-index: 999;
+  width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.auth-menu.hidden {
+  display: none;
+}
+
+.auth-menu .auth-link {
+  display: block;
+  padding: 8px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-menu .auth-link:hover {
+  color: #0056b3;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* For Navbar Links to stay in position */
+.navbar-nav .nav-item {
+  display: inline-block;
+}
+
+.menu-button {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(212, 79, 79, 0.2);
+  z-index: 999;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hover effect for links */
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+.chat-bubble {
+  padding: 10px 15px;
+  margin: 5px 10px;
+  border-radius: 15px;
+  max-width: 70%;
+  clear: both;
+}
+
+.user-bubble {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+  margin-left: auto;
+  text-align: right;
+}
+
+.bot-bubble {
+  background-color: #f8d7da;
+  align-self: flex-start;
+  margin-right: auto;
+  text-align: left;
+}
+
+#send-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Add this to your CSS */
+.hidden {
+  display: none;
+}
+
+.auth-menu {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.auth-menu .auth-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Typing indicator animation */
+.typing .dots {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.typing .dots span {
+  animation: blink 1.4s infinite both;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.typing .dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing .dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%, 80%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+
+

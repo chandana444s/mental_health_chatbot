@@ -1,0 +1,145 @@
+{
+  "anger": {
+    "keywords": ["angry", "mad", "furious", "irritated", "annoyed", "rage", "snapped"],
+    "links": [
+      {"title": "Calm Down in 5 Minutes", "link": "https://www.youtube.com/watch?v=3J9_EjebLyo"},
+      {"title": "Anger Management Techniques That Work", "link": "https://www.youtube.com/watch?v=6xSxXiHwMrg"},
+      {"title": "How to Control Anger: 25 Tips", "link": "https://www.youtube.com/watch?v=1h3T4s5mD7k"},
+      {"title": "The Surprising Purpose of Anger | TEDx", "link": "https://www.youtube.com/watch?v=Ivm-mr4nSxo"},
+      {"title": "How to Let Go of Anger and Resentment", "link": "https://www.youtube.com/watch?v=JJAHGpe0AVU"}
+    ],
+    "books": [
+      {"title": "Anger: Wisdom for Cooling the Flames by Thich Nhat Hanh", "link": "https://www.goodreads.com/book/show/16317.Anger"},
+      {"title": "The Dance of Anger by Harriet Lerner", "link": "https://www.goodreads.com/book/show/93806.The_Dance_of_Anger"},
+      {"title": "Anger Management for Dummies by Charles H. Elliott", "link": "https://www.goodreads.com/book/show/656157.Anger_Management_For_Dummies"}
+    ]
+  },
+  "anxiety": {
+    "keywords": ["anxious", "nervous", "worried", "panic", "fear", "stressed", "tension"],
+    "links": [
+      {"title": "5-Minute Meditation You Can Do Anywhere", "link": "https://www.youtube.com/watch?v=inpok4MKVLM"},
+      {"title": "Deep Breathing for Anxiety Relief", "link": "https://www.youtube.com/watch?v=Z3u11_6cS7Y"},
+      {"title": "Understanding Anxiety - Animated", "link": "https://www.youtube.com/watch?v=WWloIAQpMcQ"},
+      {"title": "How to Stop Feeling Anxious About Anxiety", "link": "https://www.youtube.com/watch?v=9AqJ_LkDQ9k"},
+      {"title": "How to Manage Anxiety and Stress | Mental Health America", "link": "https://www.youtube.com/watch?v=hnpQrMqDoqE"},
+      {"title": "Panic Attacks: What They Are and How to Cope", "link": "https://www.youtube.com/watch?v=Z7VgqB0UxBY"}
+    ],
+    "books": [
+      {"title": "The Anxiety and Phobia Workbook by Edmund J. Bourne", "link": "https://www.goodreads.com/book/show/84245.The_Anxiety_and_Phobia_Workbook"},
+      {"title": "Dare: The New Way to End Anxiety by Barry McDonagh", "link": "https://www.goodreads.com/book/show/28695425-dare"},
+      {"title": "My Age of Anxiety by Scott Stossel", "link": "https://www.goodreads.com/book/show/15836152-my-age-of-anxiety"}
+    ]
+  },
+  "depression": {
+    "keywords": ["depressed", "hopeless", "worthless", "empty", "down", "numb", "unmotivated"],
+    "links": [
+      {"title": "What is Depression?", "link": "https://www.youtube.com/watch?v=z-IR48Mb3W0"},
+      {"title": "Self-Care for Depression", "link": "https://www.youtube.com/watch?v=ZQzE7jIGAo4"},
+      {"title": "How to Cope With Depression", "link": "https://www.youtube.com/watch?v=ea4pGZxkpLk"},
+      {"title": "How to Support Someone with Depression", "link": "https://www.youtube.com/watch?v=GOK1tKFFIQI"},
+      {"title": "Coping with Depression: Tips and Strategies", "link": "https://www.youtube.com/watch?v=1UXF8Oec7Ew"}
+    ],
+    "books": [
+      {"title": "Feeling Good: The New Mood Therapy by David D. Burns", "link": "https://www.goodreads.com/book/show/46674.Feeling_Good"},
+      {"title": "Lost Connections by Johann Hari", "link": "https://www.goodreads.com/book/show/34921573-lost-connections"},
+      {"title": "The Noonday Demon by Andrew Solomon", "link": "https://www.goodreads.com/book/show/49269.The_Noonday_Demon"}
+    ]
+  },
+  "sadness": {
+    "keywords": ["sad", "lonely", "crying", "tears", "broken", "hurt", "emotional"],
+    "links": [
+      {"title": "How to Deal with Sadness", "link": "https://www.youtube.com/watch?v=5aYVrIztDd8"},
+      {"title": "Emotional First Aid | Guy Winch | TED Talk", "link": "https://www.youtube.com/watch?v=F2hc2FLOdhI"},
+      {"title": "Feel Better Fast - Emotional Reset Techniques", "link": "https://www.youtube.com/watch?v=v2OECzv9BME"},
+      {"title": "How to Handle Sadness Effectively", "link": "https://www.youtube.com/watch?v=DB_YKJS6kcE"}
+    ],
+    "books": [
+      {"title": "The Gifts of Imperfection by Brené Brown", "link": "https://www.goodreads.com/book/show/7015403-the-gifts-of-imperfection"},
+      {"title": "It's OK That You're Not OK by Megan Devine", "link": "https://www.goodreads.com/book/show/34219821-it-s-ok-that-you-re-not-ok"},
+      {"title": "Option B by Sheryl Sandberg and Adam Grant", "link": "https://www.goodreads.com/book/show/32768538-option-b"}
+    ]
+  },
+  "loneliness": {
+    "keywords": ["lonely", "isolated", "alone", "forsaken", "abandoned", "unwanted"],
+    "links": [
+      {"title": "How to Cope with Loneliness", "link": "https://www.youtube.com/watch?v=QzE-9aJTOHM"},
+      {"title": "The Science of Loneliness", "link": "https://www.youtube.com/watch?v=H8M_cHFRuog"},
+      {"title": "Building Connections to Overcome Loneliness", "link": "https://www.youtube.com/watch?v=BTfcqzW69lA"}
+    ],
+    "books": [
+      {"title": "Loneliness: Human Nature and the Need for Social Connection by John T. Cacioppo", "link": "https://www.goodreads.com/book/show/24487540-loneliness"},
+      {"title": "Together: The Healing Power of Human Connection in a Sometimes Lonely World by Vivek H. Murthy", "link": "https://www.goodreads.com/book/show/40809265-together"}
+    ]
+  },
+  "stress": {
+    "keywords": ["stress", "overwhelmed", "pressure", "burnout", "tense", "frustrated"],
+    "links": [
+      {"title": "Stress Relief Techniques That Work", "link": "https://www.youtube.com/watch?v=hnpQrMqDoqE"},
+      {"title": "Progressive Muscle Relaxation", "link": "https://www.youtube.com/watch?v=ihO02wUzgkc"},
+      {"title": "Understanding Stress and How to Manage It", "link": "https://www.youtube.com/watch?v=R8i56qQWMIc"}
+    ],
+    "books": [
+      {"title": "Why Zebras Don't Get Ulcers by Robert M. Sapolsky", "link": "https://www.goodreads.com/book/show/67551.Why_Zebras_Don_t_Get_Ulcers"},
+      {"title": "Burnout: The Secret to Unlocking the Stress Cycle by Emily Nagoski", "link": "https://www.goodreads.com/book/show/39785762-burnout"}
+    ]
+  },
+  "grief": {
+    "keywords": ["grief", "loss", "mourning", "bereavement", "heartbroken", "sadness"],
+    "links": [
+      {"title": "Understanding Grief and Loss", "link": "https://www.youtube.com/watch?v=Z4g9sTuhkjo"},
+      {"title": "Coping with Grief | TEDx Talk", "link": "https://www.youtube.com/watch?v=9T9xJpB4WUk"},
+      {"title": "Healing After Loss", "link": "https://www.youtube.com/watch?v=1T2HKwdz0vs"}
+    ],
+    "books": [
+      {"title": "On Grief and Grieving by Elisabeth Kübler-Ross", "link": "https://www.goodreads.com/book/show/34981.On_Grief_and_Grieving"},
+      {"title": "The Year of Magical Thinking by Joan Didion", "link": "https://www.goodreads.com/book/show/18426.The_Year_of_Magical_Thinking"}
+    ]
+  },
+  "fear": {
+    "keywords": ["fear", "scared", "terrified", "panic", "phobia", "frightened"],
+    "links": [
+      {"title": "Understanding Fear and How to Overcome It", "link": "https://www.youtube.com/watch?v=7ZpGZXQH8M4"},
+      {"title": "How to Manage Fear and Anxiety", "link": "https://www.youtube.com/watch?v=xRsfqZx7F40"},
+      {"title": "Overcoming Phobias", "link": "https://www.youtube.com/watch?v=3-wuTPMhCN8"}
+    ],
+    "books": [
+      {"title": "Feel the Fear and Do It Anyway by Susan Jeffers", "link": "https://www.goodreads.com/book/show/2223.Feel_the_Fear_and_Do_It_Anyway"},
+      {"title": "Phobia Free: Overcome Your Fears and Phobias with CBT by Max Highstein", "link": "https://www.goodreads.com/book/show/47603538-phobia-free"}
+    ]
+  },
+  "guilt": {
+    "keywords": ["guilt", "remorse", "regret", "blame", "shame", "fault"],
+    "links": [
+      {"title": "How to Deal with Guilt", "link": "https://www.youtube.com/watch?v=FFVwHKCHMi4"},
+      {"title": "Overcoming Guilt and Shame", "link": "https://www.youtube.com/watch?v=WyK5ms4UsYw"}
+    ],
+    "books": [
+      {"title": "Guilt, Shame, and Anxiety by Gershen Kaufman", "link": "https://www.goodreads.com/book/show/135880.Guilt_Shame_and_Anxiety"},
+      {"title": "Radical Acceptance by Tara Brach", "link": "https://www.goodreads.com/book/show/6490.Radical_Acceptance"}
+    ]
+  },
+  "shame": {
+    "keywords": ["shame", "embarrassed", "humiliated", "disgraced", "ashamed"],
+    "links": [
+      {"title": "The Power of Vulnerability | Brené Brown | TED Talk", "link": "https://www.youtube.com/watch?v=iCvmsMzlF7o"},
+      {"title": "Healing Shame", "link": "https://www.youtube.com/watch?v=y7yX7wZRmM4"}
+    ],
+    "books": [
+      {"title": "The Gifts of Imperfection by Brené Brown", "link": "https://www.goodreads.com/book/show/7015403-the-gifts-of-imperfection"},
+      {"title": "Healing the Shame That Binds You by John Bradshaw", "link": "https://www.goodreads.com/book/show/187167.Healing_the_Shame_That_Binds_You"}
+    ]
+  },
+  "overwhelm": {
+    "keywords": ["overwhelmed", "stressed", "burnout", "exhausted", "fatigued"],
+    "links": [
+      {"title": "How to Manage Overwhelm and Stress", "link": "https://www.youtube.com/watch?v=3omvMZ_fq8M"},
+      {"title": "Dealing with Burnout", "link": "https://www.youtube.com/watch?v=mihs0My7WhA"}
+    ],
+    "books": [
+      {"title": "Burnout: The Secret to Unlocking the Stress Cycle by Emily Nagoski", "link": "https://www.goodreads.com/book/show/39785762-burnout"},
+      {"title": "The Upside of Stress by Kelly McGonigal", "link": "https://www.goodreads.com/book/show/20834290-the-upside-of-stress"}
+    ]
+  }
+}
+
+

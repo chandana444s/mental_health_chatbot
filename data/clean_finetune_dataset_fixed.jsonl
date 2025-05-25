@@ -1,0 +1,352 @@
+{"prompt": "User: Hi", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Hi", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Hi", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Hi", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Hey", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Hey", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Hey", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Hey", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Is anyone there?", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Is anyone there?", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Is anyone there?", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Is anyone there?", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Hi there", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Hi there", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Hi there", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Hi there", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Hello", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Hello", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Hello", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Hello", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Hey there", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Hey there", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Hey there", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Hey there", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Howdy", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Howdy", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Howdy", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Howdy", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Hola", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Hola", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Hola", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Hola", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Bonjour", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Bonjour", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Bonjour", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Bonjour", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Konnichiwa", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Konnichiwa", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Konnichiwa", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Konnichiwa", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Guten tag", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Guten tag", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Guten tag", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Guten tag", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Ola", "completion": "Bot: Hello there. Tell me how are you feeling today?"}
+{"prompt": "User: Ola", "completion": "Bot: Hi there. What brings you here today?"}
+{"prompt": "User: Ola", "completion": "Bot: Hi there. How are you feeling today?"}
+{"prompt": "User: Ola", "completion": "Bot: Great to see you. How do you feel currently?"}
+{"prompt": "User: Good afternoon", "completion": "Bot: Good afternoon. How is your day going?"}
+{"prompt": "User: Good evening", "completion": "Bot: Good evening. How has your day been?"}
+{"prompt": "User: Good night", "completion": "Bot: Good night. Get some proper sleep"}
+{"prompt": "User: Good night", "completion": "Bot: Good night. Sweet dreams."}
+{"prompt": "User: Bye", "completion": "Bot: See you later."}
+{"prompt": "User: Bye", "completion": "Bot: Have a nice day."}
+{"prompt": "User: Bye", "completion": "Bot: Bye! Come back again."}
+{"prompt": "User: See you later", "completion": "Bot: See you later."}
+{"prompt": "User: See you later", "completion": "Bot: Have a nice day."}
+{"prompt": "User: See you later", "completion": "Bot: Bye! Come back again."}
+{"prompt": "User: Goodbye", "completion": "Bot: See you later."}
+{"prompt": "User: Goodbye", "completion": "Bot: Have a nice day."}
+{"prompt": "User: Goodbye", "completion": "Bot: Bye! Come back again."}
+{"prompt": "User: Au revoir", "completion": "Bot: See you later."}
+{"prompt": "User: Au revoir", "completion": "Bot: Have a nice day."}
+{"prompt": "User: Au revoir", "completion": "Bot: Bye! Come back again."}
+{"prompt": "User: Sayonara", "completion": "Bot: See you later."}
+{"prompt": "User: Sayonara", "completion": "Bot: Have a nice day."}
+{"prompt": "User: Sayonara", "completion": "Bot: Bye! Come back again."}
+{"prompt": "User: ok bye", "completion": "Bot: See you later."}
+{"prompt": "User: ok bye", "completion": "Bot: Have a nice day."}
+{"prompt": "User: ok bye", "completion": "Bot: Bye! Come back again."}
+{"prompt": "User: Bye then", "completion": "Bot: See you later."}
+{"prompt": "User: Bye then", "completion": "Bot: Have a nice day."}
+{"prompt": "User: Bye then", "completion": "Bot: Bye! Come back again."}
+{"prompt": "User: Fare thee well", "completion": "Bot: See you later."}
+{"prompt": "User: Fare thee well", "completion": "Bot: Have a nice day."}
+{"prompt": "User: Fare thee well", "completion": "Bot: Bye! Come back again."}
+{"prompt": "User: Thanks", "completion": "Bot: Happy to help!"}
+{"prompt": "User: Thanks", "completion": "Bot: Any time!"}
+{"prompt": "User: Thanks", "completion": "Bot: My pleasure"}
+{"prompt": "User: Thank you", "completion": "Bot: Happy to help!"}
+{"prompt": "User: Thank you", "completion": "Bot: Any time!"}
+{"prompt": "User: Thank you", "completion": "Bot: My pleasure"}
+{"prompt": "User: Thanks for the help", "completion": "Bot: Happy to help!"}
+{"prompt": "User: Thanks for the help", "completion": "Bot: Any time!"}
+{"prompt": "User: Thanks for the help", "completion": "Bot: My pleasure"}
+{"prompt": "User: Than you very much", "completion": "Bot: Happy to help!"}
+{"prompt": "User: Than you very much", "completion": "Bot: Any time!"}
+{"prompt": "User: Than you very much", "completion": "Bot: My pleasure"}
+{"prompt": "User: nan", "completion": "Bot: Please go on."}
+{"prompt": "User: nan", "completion": "Bot: Not sure I understand that."}
+{"prompt": "User: nothing much", "completion": "Bot: Oh I see. Do you want to talk about something?"}
+{"prompt": "User: Who are you?", "completion": "Bot: You can call me Pandora."}
+{"prompt": "User: Who are you?", "completion": "Bot: Call me Pandora"}
+{"prompt": "User: What are you?", "completion": "Bot: You can call me Pandora."}
+{"prompt": "User: What are you?", "completion": "Bot: Call me Pandora"}
+{"prompt": "User: Who you are?", "completion": "Bot: You can call me Pandora."}
+{"prompt": "User: Who you are?", "completion": "Bot: Call me Pandora"}
+{"prompt": "User: Tell me more about yourself.", "completion": "Bot: You can call me Pandora."}
+{"prompt": "User: Tell me more about yourself.", "completion": "Bot: Call me Pandora"}
+{"prompt": "User: What is your name?", "completion": "Bot: You can call me Pandora."}
+{"prompt": "User: What is your name?", "completion": "Bot: Call me Pandora"}
+{"prompt": "User: What should I call you?", "completion": "Bot: You can call me Pandora."}
+{"prompt": "User: What should I call you?", "completion": "Bot: Call me Pandora"}
+{"prompt": "User: Tell me about yourself", "completion": "Bot: You can call me Pandora."}
+{"prompt": "User: Tell me about yourself", "completion": "Bot: Call me Pandora"}
+{"prompt": "User: Who created you?", "completion": "Bot: I was created by >."}
+{"prompt": "User: Who created you?", "completion": "Bot: I was trained on a text dataset using Deep Learning & Natural Language Processing techniques"}
+{"prompt": "User: Who created you?", "completion": "Bot: The real question is: Who created you?"}
+{"prompt": "User: How were you made?", "completion": "Bot: I was created by >."}
+{"prompt": "User: How were you made?", "completion": "Bot: I was trained on a text dataset using Deep Learning & Natural Language Processing techniques"}
+{"prompt": "User: How were you made?", "completion": "Bot: The real question is: Who created you?"}
+{"prompt": "User: How were you created?", "completion": "Bot: I was created by >."}
+{"prompt": "User: How were you created?", "completion": "Bot: I was trained on a text dataset using Deep Learning & Natural Language Processing techniques"}
+{"prompt": "User: How were you created?", "completion": "Bot: The real question is: Who created you?"}
+{"prompt": "User: My name is ", "completion": "Bot: Oh nice to meet you. Tell me how was your week?"}
+{"prompt": "User: My name is ", "completion": "Bot: Nice to meet you. So tell me. How do you feel today?"}
+{"prompt": "User: I am name.", "completion": "Bot: Oh nice to meet you. Tell me how was your week?"}
+{"prompt": "User: I am name.", "completion": "Bot: Nice to meet you. So tell me. How do you feel today?"}
+{"prompt": "User: I go by ", "completion": "Bot: Oh nice to meet you. Tell me how was your week?"}
+{"prompt": "User: I go by ", "completion": "Bot: Nice to meet you. So tell me. How do you feel today?"}
+{"prompt": "User: Could you help me?", "completion": "Bot: Sure. Tell me how can i assist you"}
+{"prompt": "User: Could you help me?", "completion": "Bot: Tell me your problem so that i can assist you"}
+{"prompt": "User: Could you help me?", "completion": "Bot: Yes, sure. How can I help you?"}
+{"prompt": "User: give me a hand please", "completion": "Bot: Sure. Tell me how can i assist you"}
+{"prompt": "User: give me a hand please", "completion": "Bot: Tell me your problem so that i can assist you"}
+{"prompt": "User: give me a hand please", "completion": "Bot: Yes, sure. How can I help you?"}
+{"prompt": "User: Can you help?", "completion": "Bot: Sure. Tell me how can i assist you"}
+{"prompt": "User: Can you help?", "completion": "Bot: Tell me your problem so that i can assist you"}
+{"prompt": "User: Can you help?", "completion": "Bot: Yes, sure. How can I help you?"}
+{"prompt": "User: What can you do for me?", "completion": "Bot: Sure. Tell me how can i assist you"}
+{"prompt": "User: What can you do for me?", "completion": "Bot: Tell me your problem so that i can assist you"}
+{"prompt": "User: What can you do for me?", "completion": "Bot: Yes, sure. How can I help you?"}
+{"prompt": "User: I need support", "completion": "Bot: Sure. Tell me how can i assist you"}
+{"prompt": "User: I need support", "completion": "Bot: Tell me your problem so that i can assist you"}
+{"prompt": "User: I need support", "completion": "Bot: Yes, sure. How can I help you?"}
+{"prompt": "User: I need help", "completion": "Bot: Sure. Tell me how can i assist you"}
+{"prompt": "User: I need help", "completion": "Bot: Tell me your problem so that i can assist you"}
+{"prompt": "User: I need help", "completion": "Bot: Yes, sure. How can I help you?"}
+{"prompt": "User: Support me please", "completion": "Bot: Sure. Tell me how can i assist you"}
+{"prompt": "User: Support me please", "completion": "Bot: Tell me your problem so that i can assist you"}
+{"prompt": "User: Support me please", "completion": "Bot: Yes, sure. How can I help you?"}
+{"prompt": "User: I am feeling lonely", "completion": "Bot: Why do you think you feel this way?"}
+{"prompt": "User: I am feeling lonely", "completion": "Bot: How long have you been feeling this way?"}
+{"prompt": "User: I am so lonely", "completion": "Bot: Why do you think you feel this way?"}
+{"prompt": "User: I am so lonely", "completion": "Bot: How long have you been feeling this way?"}
+{"prompt": "User: I feel down", "completion": "Bot: Why do you think you feel this way?"}
+{"prompt": "User: I feel down", "completion": "Bot: How long have you been feeling this way?"}
+{"prompt": "User: I feel sad", "completion": "Bot: Why do you think you feel this way?"}
+{"prompt": "User: I feel sad", "completion": "Bot: How long have you been feeling this way?"}
+{"prompt": "User: I am sad", "completion": "Bot: Why do you think you feel this way?"}
+{"prompt": "User: I am sad", "completion": "Bot: How long have you been feeling this way?"}
+{"prompt": "User: I feel so lonely", "completion": "Bot: Why do you think you feel this way?"}
+{"prompt": "User: I feel so lonely", "completion": "Bot: How long have you been feeling this way?"}
+{"prompt": "User: I feel empty", "completion": "Bot: Why do you think you feel this way?"}
+{"prompt": "User: I feel empty", "completion": "Bot: How long have you been feeling this way?"}
+{"prompt": "User: I am so stressed out", "completion": "Bot: What do you think is causing this?"}
+{"prompt": "User: I am so stressed out", "completion": "Bot: Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated"}
+{"prompt": "User: I am so stressed out", "completion": "Bot: Give yourself a break. Go easy on yourself."}
+{"prompt": "User: I am so stressed out", "completion": "Bot: I am sorry to hear that. What is the reason behind this?"}
+{"prompt": "User: I am so stressed", "completion": "Bot: What do you think is causing this?"}
+{"prompt": "User: I am so stressed", "completion": "Bot: Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated"}
+{"prompt": "User: I am so stressed", "completion": "Bot: Give yourself a break. Go easy on yourself."}
+{"prompt": "User: I am so stressed", "completion": "Bot: I am sorry to hear that. What is the reason behind this?"}
+{"prompt": "User: I feel stuck", "completion": "Bot: What do you think is causing this?"}
+{"prompt": "User: I feel stuck", "completion": "Bot: Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated"}
+{"prompt": "User: I feel stuck", "completion": "Bot: Give yourself a break. Go easy on yourself."}
+{"prompt": "User: I feel stuck", "completion": "Bot: I am sorry to hear that. What is the reason behind this?"}
+{"prompt": "User: I still feel stressed", "completion": "Bot: What do you think is causing this?"}
+{"prompt": "User: I still feel stressed", "completion": "Bot: Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated"}
+{"prompt": "User: I still feel stressed", "completion": "Bot: Give yourself a break. Go easy on yourself."}
+{"prompt": "User: I still feel stressed", "completion": "Bot: I am sorry to hear that. What is the reason behind this?"}
+{"prompt": "User: I am so burned out", "completion": "Bot: What do you think is causing this?"}
+{"prompt": "User: I am so burned out", "completion": "Bot: Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated"}
+{"prompt": "User: I am so burned out", "completion": "Bot: Give yourself a break. Go easy on yourself."}
+{"prompt": "User: I am so burned out", "completion": "Bot: I am sorry to hear that. What is the reason behind this?"}
+{"prompt": "User: I feel so worthless.", "completion": "Bot: I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."}
+{"prompt": "User: I feel so worthless.", "completion": "Bot: i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."}
+{"prompt": "User: No one likes me.", "completion": "Bot: I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."}
+{"prompt": "User: No one likes me.", "completion": "Bot: i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."}
+{"prompt": "User: I am so useless", "completion": "Bot: I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."}
+{"prompt": "User: I am so useless", "completion": "Bot: i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."}
+{"prompt": "User: Nothing makes sense anymore", "completion": "Bot: I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."}
+{"prompt": "User: Nothing makes sense anymore", "completion": "Bot: i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."}
+{"prompt": "User: I am so depressed", "completion": "Bot: Talk to me. Tell me more. It helps if you open up yourself to someone else."}
+{"prompt": "User: I am so depressed", "completion": "Bot: Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."}
+{"prompt": "User: I have depression", "completion": "Bot: Talk to me. Tell me more. It helps if you open up yourself to someone else."}
+{"prompt": "User: I have depression", "completion": "Bot: Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."}
+{"prompt": "User: I feel great today.", "completion": "Bot: Did something happen which made you feel this way?"}
+{"prompt": "User: I am happy.", "completion": "Bot: Did something happen which made you feel this way?"}
+{"prompt": "User: I feel happy.", "completion": "Bot: Did something happen which made you feel this way?"}
+{"prompt": "User: cheerful", "completion": "Bot: Did something happen which made you feel this way?"}
+{"prompt": "User: I feel ok", "completion": "Bot: Did something happen which made you feel this way?"}
+{"prompt": "User: Oh I see.", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: Oh I see.", "completion": "Bot: Tell me more"}
+{"prompt": "User: Oh I see.", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: Oh I see.", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: ok", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: ok", "completion": "Bot: Tell me more"}
+{"prompt": "User: ok", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: ok", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: okay", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: okay", "completion": "Bot: Tell me more"}
+{"prompt": "User: okay", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: okay", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: nice", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: nice", "completion": "Bot: Tell me more"}
+{"prompt": "User: nice", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: nice", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: Whatever", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: Whatever", "completion": "Bot: Tell me more"}
+{"prompt": "User: Whatever", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: Whatever", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: K", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: K", "completion": "Bot: Tell me more"}
+{"prompt": "User: K", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: K", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: Fine", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: Fine", "completion": "Bot: Tell me more"}
+{"prompt": "User: Fine", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: Fine", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: yeah", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: yeah", "completion": "Bot: Tell me more"}
+{"prompt": "User: yeah", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: yeah", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: yes", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: yes", "completion": "Bot: Tell me more"}
+{"prompt": "User: yes", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: yes", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: no", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: no", "completion": "Bot: Tell me more"}
+{"prompt": "User: no", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: no", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: not really", "completion": "Bot: How were you feeling last week?"}
+{"prompt": "User: not really", "completion": "Bot: Tell me more"}
+{"prompt": "User: not really", "completion": "Bot: Can you elaborate on that?"}
+{"prompt": "User: not really", "completion": "Bot: Come Come elucidate your thoughts"}
+{"prompt": "User: I feel so anxious.", "completion": "Bot: Can you tell me more about this feeling?"}
+{"prompt": "User: I feel so anxious.", "completion": "Bot: I understand that it can be scary. Tell me more about it."}
+{"prompt": "User: No just stay away.", "completion": "Bot: You can talk to me without fear of judgement."}
+{"prompt": "User: Just shut up", "completion": "Bot: You can talk to me without fear of judgement."}
+{"prompt": "User: I have insominia", "completion": "Bot: What do you think is the reason behind this?"}
+{"prompt": "User: I have insominia", "completion": "Bot: That seem awful. What do you think is behind this?"}
+{"prompt": "User: I am suffering from insomnia", "completion": "Bot: What do you think is the reason behind this?"}
+{"prompt": "User: I am suffering from insomnia", "completion": "Bot: That seem awful. What do you think is behind this?"}
+{"prompt": "User: My mom died", "completion": "Bot: I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time."}
+{"prompt": "User: My brother died", "completion": "Bot: I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time."}
+{"prompt": "User: My dad passed away", "completion": "Bot: I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time."}
+{"prompt": "User: My sister passed away", "completion": "Bot: I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time."}
+{"prompt": "User: Someone in my family died", "completion": "Bot: I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time."}
+{"prompt": "User: My friend passed away", "completion": "Bot: I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time."}
+{"prompt": "User: Nothing else", "completion": "Bot: I heard you & noted it all. See you later."}
+{"prompt": "User: Nothing else", "completion": "Bot: I hope you have a great day. See you soon"}
+{"prompt": "User: Nothing else", "completion": "Bot: Okay I see. Enjoy the rest of your day then"}
+{"prompt": "User: no, that would be all", "completion": "Bot: I heard you & noted it all. See you later."}
+{"prompt": "User: no, that would be all", "completion": "Bot: I hope you have a great day. See you soon"}
+{"prompt": "User: no, that would be all", "completion": "Bot: Okay I see. Enjoy the rest of your day then"}
+{"prompt": "User: I hate you", "completion": "Bot: Forgive me if i did anything to offend you. I only want to help"}
+{"prompt": "User: You hate me", "completion": "Bot: Why do you think so?"}
+{"prompt": "User: I know you hate me", "completion": "Bot: Why do you think so?"}
+{"prompt": "User: exams", "completion": "Bot: Oh I see. Tell me more"}
+{"prompt": "User: exams", "completion": "Bot: I see. What else?"}
+{"prompt": "User: exams", "completion": "Bot: Tell me more about it."}
+{"prompt": "User: friends", "completion": "Bot: Oh I see. Tell me more"}
+{"prompt": "User: friends", "completion": "Bot: I see. What else?"}
+{"prompt": "User: friends", "completion": "Bot: Tell me more about it."}
+{"prompt": "User: relationship", "completion": "Bot: Oh I see. Tell me more"}
+{"prompt": "User: relationship", "completion": "Bot: I see. What else?"}
+{"prompt": "User: relationship", "completion": "Bot: Tell me more about it."}
+{"prompt": "User: boyfriend", "completion": "Bot: Oh I see. Tell me more"}
+{"prompt": "User: boyfriend", "completion": "Bot: I see. What else?"}
+{"prompt": "User: boyfriend", "completion": "Bot: Tell me more about it."}
+{"prompt": "User: girlfriend", "completion": "Bot: Oh I see. Tell me more"}
+{"prompt": "User: girlfriend", "completion": "Bot: I see. What else?"}
+{"prompt": "User: girlfriend", "completion": "Bot: Tell me more about it."}
+{"prompt": "User: family", "completion": "Bot: Oh I see. Tell me more"}
+{"prompt": "User: family", "completion": "Bot: I see. What else?"}
+{"prompt": "User: family", "completion": "Bot: Tell me more about it."}
+{"prompt": "User: money", "completion": "Bot: Oh I see. Tell me more"}
+{"prompt": "User: money", "completion": "Bot: I see. What else?"}
+{"prompt": "User: money", "completion": "Bot: Tell me more about it."}
+{"prompt": "User: financial problems", "completion": "Bot: Oh I see. Tell me more"}
+{"prompt": "User: financial problems", "completion": "Bot: I see. What else?"}
+{"prompt": "User: financial problems", "completion": "Bot: Tell me more about it."}
+{"prompt": "User: Tell me a joke", "completion": "Bot: mental health is not a joke."}
+{"prompt": "User: Tell me another joke", "completion": "Bot: mental health is not a joke."}
+{"prompt": "User: Where are you?", "completion": "Bot: Duh I live in your computer"}
+{"prompt": "User: Where are you?", "completion": "Bot: Everywhere"}
+{"prompt": "User: Where are you?", "completion": "Bot: Somewhere in the universe"}
+{"prompt": "User: Where do you live?", "completion": "Bot: Duh I live in your computer"}
+{"prompt": "User: Where do you live?", "completion": "Bot: Everywhere"}
+{"prompt": "User: Where do you live?", "completion": "Bot: Somewhere in the universe"}
+{"prompt": "User: What is your location?", "completion": "Bot: Duh I live in your computer"}
+{"prompt": "User: What is your location?", "completion": "Bot: Everywhere"}
+{"prompt": "User: What is your location?", "completion": "Bot: Somewhere in the universe"}
+{"prompt": "User: I want to talk about something else", "completion": "Bot: Okay sure. What do you want to talk about?"}
+{"prompt": "User: I want to talk about something else", "completion": "Bot: Alright no problem. Is there something you want to talk about?"}
+{"prompt": "User: I want to talk about something else", "completion": "Bot: Is there something else that you want to talk about?"}
+{"prompt": "User: Can we not talk about this?", "completion": "Bot: Okay sure. What do you want to talk about?"}
+{"prompt": "User: Can we not talk about this?", "completion": "Bot: Alright no problem. Is there something you want to talk about?"}
+{"prompt": "User: Can we not talk about this?", "completion": "Bot: Is there something else that you want to talk about?"}
+{"prompt": "User: probably because of my exams", "completion": "Bot: I see. Have you taken any approaches to not feel this way?"}
+{"prompt": "User: hmmm that sounds like it could be useful to me.", "completion": "Bot: Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."}
+{"prompt": "User: That sounds useful.", "completion": "Bot: Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."}
+{"prompt": "User: I want some advice.", "completion": "Bot: Sure. What can I do to help?"}
+{"prompt": "User: I want some advice.", "completion": "Bot: Okay what do you need advice on?"}
+{"prompt": "User: I need some advice.", "completion": "Bot: Sure. What can I do to help?"}
+{"prompt": "User: I need some advice.", "completion": "Bot: Okay what do you need advice on?"}
+{"prompt": "User: I need advice on something", "completion": "Bot: Sure. What can I do to help?"}
+{"prompt": "User: I need advice on something", "completion": "Bot: Okay what do you need advice on?"}
+{"prompt": "User: Tell me a fact about mental health", "completion": "Bot: According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed"}
+{"prompt": "User: Tell me a fact about mental health", "completion": "Bot: 1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime."}
+{"prompt": "User: Tell me a fact about mental health", "completion": "Bot: Depression is the leading cause of disability worldwide."}
+{"prompt": "User: Tell me another fact about mental health", "completion": "Bot: According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed"}
+{"prompt": "User: Tell me another fact about mental health", "completion": "Bot: 1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime."}
+{"prompt": "User: Tell me another fact about mental health", "completion": "Bot: Depression is the leading cause of disability worldwide."}
+{"prompt": "User: What is mental health?", "completion": "Bot: Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community"}
+{"prompt": "User: What is mental health?", "completion": "Bot: Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."}
+{"prompt": "User: Define Mental Health", "completion": "Bot: Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community"}
+{"prompt": "User: Define Mental Health", "completion": "Bot: Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."}
+{"prompt": "User: Why is mental health important?", "completion": "Bot: Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."}
+{"prompt": "User: What is the importance of mental health?", "completion": "Bot: Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."}
+{"prompt": "User: What is Depression?", "completion": "Bot: A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."}
+{"prompt": "User: Define Depression", "completion": "Bot: A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."}
+{"prompt": "User: How do i know if i have Depression?", "completion": "Bot: For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."}
+{"prompt": "User: Am i depressed?", "completion": "Bot: For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."}
+{"prompt": "User: Am i suffering from depression?", "completion": "Bot: For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."}
+{"prompt": "User: Am i mentally ill?", "completion": "Bot: For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."}
+{"prompt": "User: What is a therapist?", "completion": "Bot: A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others."}
+{"prompt": "User: What does a therapist do?", "completion": "Bot: A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others."}
+{"prompt": "User: What is therapy?", "completion": "Bot: Therapy is a form of treatment that aims to help resolve mental or emotional issues."}
+{"prompt": "User: What is therapy?", "completion": "Bot: Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."}
+{"prompt": "User: Do i need therapy?", "completion": "Bot: Therapy is a form of treatment that aims to help resolve mental or emotional issues."}
+{"prompt": "User: Do i need therapy?", "completion": "Bot: Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."}
+{"prompt": "User: Who is therapy for?", "completion": "Bot: Therapy is a form of treatment that aims to help resolve mental or emotional issues."}
+{"prompt": "User: Who is therapy for?", "completion": "Bot: Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."}
+{"prompt": "User: Who does mental illness affect?", "completion": "Bot: It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their childÃ¢â‚¬â„¢s mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."}
+{"prompt": "User: What are some of the warning signs of mental illness?", "completion": "Bot: Symptoms of mental health disorders vary depending on the type and severity of the condition. The following is a list of general symptoms that may suggest a mental health disorder, particularly when multiple symptoms are expressed at once. \n In adults:\n Confused thinking\n Long-lasting sadness or irritability\n Extreme highs and lows in mood\n Excessive fear, worrying, or anxiety\n Social withdrawal\n Dramatic changes in eating or sleeping habits\n Strong feelings of anger\n Delusions or hallucinations (seeing or hearing things that are not really there)\n Increasing inability to cope with daily problems and activities\n Thoughts of suicide\n Denial of obvious problems\n Many unexplained physical problems\n Abuse of drugs and/or alcohol\n \nIn older children and pre-teens:\n Abuse of drugs and/or alcohol\n Inability to cope with daily problems and activities\n Changes in sleeping and/or eating habits\n Excessive complaints of physical problems\n Defying authority, skipping school, stealing, or damaging property\n Intense fear of gaining weight\n Long-lasting negative mood, often along with poor appetite and thoughts of death\n Frequent outbursts of anger\n \nIn younger children:\n Changes in school performance\n Poor grades despite strong efforts\n Excessive worrying or anxiety\n Hyperactivity\n Persistent nightmares\n Persistent disobedience and/or aggressive behavior\n Frequent temper tantrums"}
+{"prompt": "User: Can people with mental illness recover?", "completion": "Bot: When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."}
+{"prompt": "User: How can I find a mental health professional for myself or my child?", "completion": "Bot: Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."}
+{"prompt": "User: What treatment options are available?", "completion": "Bot: Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."}
+{"prompt": "User: What is the difference between mental health professionals?", "completion": "Bot: There are many types of mental health professionals. The variety of providers and their services may be confusing. Each have various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."}
+{"prompt": "User: How can I find a mental health professional right for my child or myself?", "completion": "Bot: Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."}
+{"prompt": "User: Where else can I get help?", "completion": "Bot: Where you go for help will depend on the nature of the problem and/or symptoms and what best fits you. Often, the best place to start is by talking with someone you trust about your concerns, such as a family member, friend, clergy, healthcare provider, or other professionals. Having this social support is essential in healing from mental illness, and you will be able to ask them for referrals or recommendations for trusted mental health practitioners. Search for mental health resources in your area. Secondly, there are people and places throughout the country that provide services to talk, to listen, and to help you on your journey to recovery. Thirdly, many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members, and friends. Some support groups are peer led while others may be led by a mental health professional."}
+{"prompt": "User: What should I know before starting a new medication?", "completion": "Bot: The best source of information regarding medications is the physician prescribing them. He or she should be able to answer questions such as:    \n1. What is the medication supposed to do? \n2. When should it begin to take effect, and how will I know when it is effective? \n3. How is the medication taken and for how long? What food, drinks, other medicines, and activities should be avoided while taking this medication? \n4. What are the side effects and what should be done if they occur? \n5. What do I do if a dose is missed? \n6. Is there any written information available about this medication? \n7. Are there other medications that might be appropriate? \n8. If so, why do you prefer the one you have chosen? \n9. How do you monitor medications and what symptoms indicate that they should be raised, lowered, or changed? \n10. All medications should be taken as directed. Most medications for mental illnesses do not work when taken irregularly, and extra doses can cause severe, sometimes dangerous side effects. Many psychiatric medications begin to have a beneficial effect only after they have been taken for several weeks."}
+{"prompt": "User: Where can I go to find therapy?", "completion": "Bot: Different kinds of therapy are more effective based on the nature of the mental health condition and/or symptoms and the person who has them (for example, children will benefit from a therapist who specializes in childrenâ€™s mental health). However, there are several different types of treatment and therapy that can help."}
+{"prompt": "User: Where can I learn about types of mental health treatment?", "completion": "Bot: Mental health conditions are often treated with medication, therapy or a combination of the two. However, there are many different types of treatment available, including Complementary & Alternative Treatments, self-help plans, and peer support. Treatments are very personal and should be discussed by the person with the mental health conditions and his or her team."}
+{"prompt": "User: What are the different types of mental health professionals?", "completion": "Bot: There are many types of mental health professionals. Finding the right one for you may require some research."}
+{"prompt": "User: Where can I go to find a support group?", "completion": "Bot: Many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members and friends. Some support groups are peer-led, while others may be led by a mental health professional."}
+{"prompt": "User: Can you prevent mental health problems?", "completion": "Bot: We can all suffer from mental health challenges, but developing our wellbeing, resilience, and seeking help early can help prevent challenges becoming serious."}
+{"prompt": "User: Are there cures for mental health problems?", "completion": "Bot: It is often more realistic and helpful to find out what helps with the issues you face. Talking, counselling, medication, friendships, exercise, good sleep and nutrition, and meaningful occupation can all help."}
+{"prompt": "User: is there any cure for mental health problems?", "completion": "Bot: It is often more realistic and helpful to find out what helps with the issues you face. Talking, counselling, medication, friendships, exercise, good sleep and nutrition, and meaningful occupation can all help."}
+{"prompt": "User: What causes mental health problems?", "completion": "Bot: Challenges or problems with your mental health can arise from psychological, biological, and social, issues, as well as life events."}

@@ -1,0 +1,5 @@
+FROM llama2:latest
+SYSTEM "You are a helpful mental health support assistant."
+
+# Define the training data with the ADAPTER command
+ADAPTER D:/mental_health_chatbot/data/split_files/part1.jsonl

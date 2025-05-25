@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile - Mental Health Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="profile-container">
+  <!-- Profile Picture -->
+  <img src="{{ user_profile_pic or url_for('static', filename='default-profile.png') }}" alt="Profile Picture" class="profile-pic">
+
+  <h2>Welcome, {{ user_name }}!</h2>
+  <p>Email: {{ user_email }}</p>
+  <p>This is your profile page.</p> 
+
+  <a href="{{ url_for('logout') }}">Logout</a>
+</div>
+
+  <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+<!-- Firebase config -->
+<script src="{{ url_for('static', filename='firebase-config.js') }}"></script>
+
+</body>
+</html>
