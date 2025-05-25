@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat History</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .chat-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .chat-message {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .chat-message.user {
+            justify-content: flex-end;
+        }
+
+        .chat-message.bot {
+            justify-content: flex-start;
+        }
+
+        .chat-bubble {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 16px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .chat-message.user .chat-bubble {
+            background-color: #DCF8C6;
+            color: #000;
+            border-bottom-right-radius: 0;
+        }
+
+        .chat-message.bot .chat-bubble {
+            background-color: #E2E2E2;
+            color: #000;
+            border-bottom-left-radius: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 24px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>🧠 Your Chat History</h2>
+        <!-- 🌤️ Mood Tracker added here -->
+        <div class="mood-tracker" style="margin: 20px 0;">
+            <p><strong>How are you feeling today?</strong></p>
+            <button onclick="submitMood('happy')">😊 Happy</button>
+            <button onclick="submitMood('sad')">😢 Sad</button>
+            <button onclick="submitMood('angry')">😠 Angry</button>
+            <button onclick="submitMood('anxious')">😟 Anxious</button>
+        </div>
+        {% if messages %}
+            {% for msg in messages %}
+                <div class="chat-message {{ msg.role }}">
+                    <div class="chat-bubble">
+                        {{ msg.content | safe }}
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No messages yet.</p>
+        {% endif %}
+        <a href="/">← Back to Chat</a>
+    </div>
+    <!-- ✅ JavaScript function for mood submission -->
+    <script>
+        function submitMood(mood) {
+            fetch('/submit_mood', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ mood: mood })
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(err => console.error('Error:', err));
+        }
+    </script>
+</body>
+</html>
