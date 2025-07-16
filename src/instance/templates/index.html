@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mental Health Support Chatbot</title>
-  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 
   <!-- External CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
 </head>
 <body>
 
@@ -59,34 +60,30 @@
       </div>
     </div>
   </nav>
-<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}">
-  <!-- Welcome Message -->
-  <div class="welcome-message">
-    {% if user_email %}
-      <p>Hello {{ user_name or user_email }}, welcome to Cinnamon Bot! How can I help you today?</p>
-    {% else %}
-      <p>Hello! Welcome to Cinnamon Bot. How can I help you today?</p>
-    {% endif %}
-  </div>
 
-  <!-- Chat Container -->
-  <div id="chatContainer" class="chat-container">
-    
-    <!-- Header -->
-<div class="header">
-  <img id="bot-profile-pic" src="{{ url_for('static', filename='bot_image.jpg') }}" alt="Bot Profile Picture"/>
-  <div class="user-info">
-    <p id="bot-name">Cinnamon Bot</p>
-    <p id="bot-status-text">Online</p>
-  </div>
-  <!-- Refresh Button -->
-  <button id="refreshButton" title="Refresh" class="delete-chat-button">
-    <i class="fas fa-sync-alt"></i>
-  </button>
+  <!-- Welcome Message -->
+<div class="welcome-message">
+  {% if welcome_message %}
+    <p>{{ welcome_message }}</p>
+  {% else %}
+    <p>Hello! Welcome to Cinnamon Bot. How can I help you today?</p>
+  {% endif %}
 </div>
 
+  <!-- Chat Container -->
+  <div class="chat-container">
+
+    <!-- Header -->
+    <div class="header">
+      <img id="bot-profile-pic" src="{{ url_for('static', filename='bot_image.jpg') }}" alt="Bot Profile Picture"/>
+      <div class="user-info">
+        <p id="bot-name">Cinnamon Bot</p>
+        <p id="bot-status-text">Online</p>
+      </div>
+    </div>
+
     <!-- Delete Chat History -->
-    <!--<button id="delete-history-btn" class="delete-button">🗑️ Delete Chat History</button> -->
+    <button id="delete-history-btn" class="delete-button">Delete Chat History</button>
 
     <!-- Chat Box -->
     <div id="chat-box">
@@ -95,10 +92,6 @@
           <p><strong>{{ msg.role.capitalize() }}:</strong> {{ msg.content | safe }}</p>
         </div>
       {% endfor %}
-          
-      <div id="typing-indicator" class="bot-msg typing-indicator" style="display: none;">
-        <p><strong>Bot:</strong> <em>Typing...</em></p></div>
-      </div>
     </div>
 
     <!-- Chat Input -->
@@ -114,8 +107,7 @@
   <div id="recommendations">
   <h3>Your Self-Care Suggestions</h3>
   <p id="emotion-summary">Loading...</p>
-  <ul id="self-care-suggestions"></ul>
-
+  <ul id="suggestions-list"></ul>
 </div>
 
   <!-- Firebase SDKs -->
@@ -130,43 +122,21 @@
 
   <!-- Inline JS -->
   <script>
-  // Refresh button acts as delete chat history
-  document.getElementById("refreshButton").addEventListener("click", async () => {
-  try {
-    const user = firebase.auth().currentUser;
-    if (!user) {
-      alert("You must be logged in to refresh/delete chat history.");
-      return;
-    }
-
-    const idToken = await user.getIdToken(true);
-    const response = await fetch("/delete_chat_history", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + idToken,
-      },
+    // Delete chat history
+    document.getElementById('delete-history').addEventListener('click', function () {
+      if (confirm("Are you sure you want to delete your chat history?")) {
+        fetch('/delete_chat_history', { method: 'POST' })
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              alert("Your chat history has been deleted.");
+              document.getElementById('chat-box').innerHTML = '';
+            } else {
+              alert("There was an error deleting your chat history.");
+            }
+          });
+      }
     });
-
-    const result = await response.json();
-    if (result.success) {
-      // Clear localStorage and chat UI
-      localStorage.removeItem("chat-history");
-      const chatBox = document.getElementById("chat-box");
-      if (chatBox) chatBox.innerHTML = "";
-
-      alert("Chat history deleted successfully.");
-      // Optional: reload the page
-      // location.reload();
-    } else {
-      console.error("Failed to delete chat history:", result.message);
-      alert("Failed to delete chat history.");
-    }
-  } catch (error) {
-    console.error("Error during refresh:", error);
-    alert("Error refreshing chat history.");
-  }
-});
 
     // Toggle dropdown menu
     function toggleMenu() {
@@ -188,5 +158,8 @@
   </script>
 </body>
 </html>
+
+
+
 
 

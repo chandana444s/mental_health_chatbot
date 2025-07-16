@@ -96,28 +96,25 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* User Message */
-.user-msg {
-  text-align: right;
-  margin-bottom: 12px;
-  color: #1d4ed8;
-  background: #e0f2fe;
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 15px 15px 0 15px;
-  max-width: 80%;
+/* Message bubbles */
+.user-msg, .bot-msg {
+  max-width: 75%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  clear: both;
+  position: relative;
 }
 
 /* Bot Message */
 .bot-msg {
-  text-align: left;
-  margin-bottom: 12px;
-  color: #0f172a;
-  background: #e2e8f0;
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 15px 15px 15px 0;
-  max-width: 80%;
+  background-color: #fff3cd;
+  color: #000;
+  align-self: flex-start;
+  margin-right: auto;
 }
 
 /* Error Message (Red Background for Bot Errors) */
@@ -505,6 +502,181 @@ button {
     opacity: 1;
   }
 }
+
+/* Login Container */
+.login-container {
+  max-width: 460px; /* Increased from 400px */
+  margin: 80px auto;
+  background: #ffffffdd; /* Slightly transparent white */
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Heading */
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1.2px;
+}
+
+/* Input fields */
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 400px;
+  max-width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 25px;
+  border: 1.8px solid #94a3b8;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 6px #2575fcaa;
+}
+
+/* Submit Button */
+.login-container button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(97, 44, 234, 0.5);
+}
+
+.login-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(97, 44, 234, 0.7);
+}
+
+/* Forgot Password Link */
+.login-container .forgot-password {
+  display: block;
+  margin-top: 15px;
+  text-align: right;
+  font-size: 14px;
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-container .forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Signup Prompt */
+.login-container .signup-prompt {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+}
+
+.login-container .signup-prompt a {
+  color: #6a11cb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-container .signup-prompt a:hover {
+  text-decoration: underline;
+}
+
+/* Register Container */
+.register-container {
+  max-width: 460px; /* Increased from 400px */
+  margin: 80px auto;
+  background: #ffffffdd; /* Slightly transparent white */
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.register-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1.2px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+  width: 400px;
+  max-width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 25px;
+  border: 1.8px solid #94a3b8;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.register-container input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 6px #2575fcaa;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(97, 44, 234, 0.5);
+}
+
+.register-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(97, 44, 234, 0.7);
+}
+
+.register-container .signup-prompt {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+}
+
+.register-container .signup-prompt a {
+  color: #6a11cb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-container .signup-prompt a:hover {
+  text-decoration: underline;
+}
+
+
+
 
 
 
