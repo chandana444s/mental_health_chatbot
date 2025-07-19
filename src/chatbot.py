@@ -15,6 +15,7 @@ from flask import request, jsonify
 from datetime import datetime, timezone
 from translator import translate_to_english, translate_from_english
 from translator import detect_language, translate_full_response
+from dotenv import load_dotenv
 
 # Helper function to translate full bot response if user's language is not English
 def translate_full_response(text, target_lang):
