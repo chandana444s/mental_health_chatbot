@@ -1,9 +1,13 @@
-
 <!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login - Mental Health Chatbot</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -28,5 +32,57 @@
       </div>
     </div>
   </div>
+=======
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Email" required autocomplete="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+  </div>
+
+  <!-- Firebase SDKs (Loaded as modules) -->
+<!-- Firebase SDKs for Modular v9 -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBXhgaji6rKcBcLmATDQ-uBBOkFjPXL0EY",
+    authDomain: "mental-health-support-ch-bf5a2.firebaseapp.com",
+    projectId: "mental-health-support-ch-bf5a2",
+    storageBucket: "mental-health-support-ch-bf5a2.appspot.com",
+    messagingSenderId: "430981111988",
+    appId: "1:430981111988:web:7f0b65bf69b47a05c377e1",
+    measurementId: "G-BZJSGP1FS4"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  const loginForm = document.getElementById("login-form");
+  loginForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+      console.log("Logged in:", user.email);
+      // Optionally redirect to home page
+      window.location.href = "/";
+    } catch (error) {
+      alert("Login failed: " + error.message);
+      console.error("Login error:", error);
+    }
+  });
+</script>
 </body>
 </html>
