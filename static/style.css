@@ -505,3 +505,91 @@ button {
     opacity: 1;
   }
 }
+
+/* Register Page Styling */
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00796b;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s;
+}
+
+.register-form input:focus {
+  border-color: #26a69a;
+  outline: none;
+}
+
+/* Homepage styling */
+.home-container {
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f2f6ff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h1 {
+  font-size: 2.5em;
+  color: #4a148c;
+}
+
+.home-container p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.button-group .btn,
+.btn {
+  padding: 12px 24px;
+  background: #6a1b9a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 0 10px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #4a148c;
+}
+
+.logout {
+  background-color: #e53935;
+}
+

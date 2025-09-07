@@ -109,86 +109,46 @@ def home():
 @app.route("/chat", methods=["POST"])
 def chat():
     try:
-        # 🧪 DEBUG: Print all incoming request headers
-        print("All request headers:", dict(request.headers))
-
-        # ✅ Extract token from Authorization header early
         auth_header = request.headers.get("Authorization", "")
         if not auth_header.startswith("Bearer "):
             return jsonify({"error": "Missing or malformed Authorization header"}), 401
 
         id_token = auth_header.split("Bearer ")[-1]
-        if not id_token:
-            return jsonify({"error": "Authorization token missing"}), 401
-
-        # ✅ Verify Firebase ID token
         decoded_token = auth.verify_id_token(id_token)
-        user_id = decoded_token["uid"]
+        print("[DEBUG] Firebase UID:", decoded_token["uid"])  # Debug
 
-        # ⬇️ Now continue with normal flow ⬇️
+        user_id = decoded_token["uid"]
         user_message = request.json.get("message")
-        print("[DEBUG] Received message:", user_message)
 
         if not user_message:
             return jsonify({"error": "No message received"}), 400
 
         # Format prompt and call LLM
         formatted_prompt = chat_template.format(user_input=user_message)
-        print("[DEBUG] Formatted prompt:", formatted_prompt)
-
         response_obj = llm.invoke(formatted_prompt)
-        print(response_obj)
+        response_text = response_obj.content if hasattr(response_obj, "content") else str(response_obj)
 
-        if hasattr(response_obj, "content"):
-            response_text = response_obj.content
-        else:
-            response_text = str(response_obj)
-
-        print("[DEBUG] LLM response:", response_text)
-
-        # Emotion detection
-        matched_emotion = None
-        emotion_data = None
-
-        for emotion, data in SUPPORT_RESOURCES.items():
-            if any(keyword in user_message.lower() for keyword in data["keywords"]):
-                matched_emotion = emotion
-                emotion_data = data
-                break
-
-        if emotion_data:
-            resource_text = "<br><br><b>📺 Helpful Videos:</b><br>"
-            for video in emotion_data.get("links", []):
-                resource_text += f'<a href="{video["link"]}" target="_blank">{video["title"]}</a><br>'
-
-            resource_text += "<br><b>📚 Book Suggestions:</b><br>"
-            for book in emotion_data.get("books", []):
-                resource_text += f'<a href="{book["link"]}" target="_blank">{book["title"]}</a><br>'
-            response_text += resource_text
-
-        # ✅ Save to Firestore
+        # Save to Firestore
         chat_ref = db.collection("users").document(user_id).collection("chats")
-
         chat_ref.add({
             "role": "user",
             "content": user_message,
             "timestamp": datetime.utcnow()
         })
-
         chat_ref.add({
             "role": "bot",
             "content": response_text,
-            "timestamp": datetime.utcnow(),
-            "detected_emotion": matched_emotion if matched_emotion else "neutral"
+            "timestamp": datetime.utcnow()
         })
 
         return jsonify({"reply": response_text})
 
     except Exception as e:
         import traceback
-        print("[ERROR] Exception occurred:")
+        print("[ERROR] Exception occurred in /chat route:")
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
+
     
 @app.route("/login", methods=["GET", "POST"])
 def login():

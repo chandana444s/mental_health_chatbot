@@ -1,192 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mental Health Support Chatbot</title>
-  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Mental Health Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .auth-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #chat-box {
+            height: 400px;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background: #fefefe;
+        }
+
+        .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 70%;
+            word-wrap: break-word;
+        }
+
+        .user-message {
+            background-color: #e1f5fe;
+            align-self: flex-end;
+            text-align: right;
+        }
+
+        .bot-message {
+            background-color: #fce4ec;
+            align-self: flex-start;
+            text-align: left;
+        }
+
+        .timestamp {
+            font-size: 0.75rem;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #send-btn {
+            background-color: #2196f3;
+        }
+
+        #send-btn:hover {
+            background-color: #1976d2;
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Toggle Dropdown Auth Menu -->
-  <button onclick="toggleMenu()" class="menu-button">☰</button>
-  <div id="authMenu" class="auth-menu hidden">
-    <span onclick="toggleMenu()" class="close-btn">×</span>
-    <div class="user-info">
-      {% if user_email %}
-        <span>Welcome, {{ user_name or user_email }}</span>
-        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">Logout</a>
-      {% else %}
-        <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Login</a>
-        <a href="{{ url_for('register') }}" class="btn btn-outline-secondary">Register</a>
-      {% endif %}
-      <p style="color: red;">Session email: {{ user_email }}</p>
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          {% if user_email %}
-            <li class="nav-item">
-              <a class="nav-link text-danger" href="{{ url_for('logout') }}">
-                <i class="fas fa-sign-out-alt"></i> Logout
-              </a>
-            </li>
-          {% else %}
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('login') }}">
-                <i class="fas fa-sign-in-alt"></i> Login
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('register') }}">
-                <i class="fas fa-user-plus"></i> Register
-              </a>
-            </li>
-          {% endif %}
-        </ul>
-      </div>
-    </div>
-  </nav>
-<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}">
-  <!-- Welcome Message -->
-  <div class="welcome-message">
-    {% if user_email %}
-      <p>Hello {{ user_name or user_email }}, welcome to Cinnamon Bot! How can I help you today?</p>
-    {% else %}
-      <p>Hello! Welcome to Cinnamon Bot. How can I help you today?</p>
-    {% endif %}
-  </div>
-
-  <!-- Chat Container -->
-  <div id="chatContainer" class="chat-container">
-    
-    <!-- Header -->
-<div class="header">
-  <img id="bot-profile-pic" src="{{ url_for('static', filename='bot_image.jpg') }}" alt="Bot Profile Picture"/>
-  <div class="user-info">
-    <p id="bot-name">Cinnamon Bot</p>
-    <p id="bot-status-text">Online</p>
-  </div>
-  <!-- Refresh Button -->
-  <button id="refreshButton" title="Refresh" class="delete-chat-button">
-    <i class="fas fa-sync-alt"></i>
-  </button>
-</div>
-
-    <!-- Delete Chat History -->
-    <!--<button id="delete-history-btn" class="delete-button">🗑️ Delete Chat History</button> -->
-
-    <!-- Chat Box -->
-    <div id="chat-box">
-      {% for msg in messages %}
-        <div class="{{ 'user-msg' if msg.role == 'user' else 'bot-msg' }}">
-          <p><strong>{{ msg.role.capitalize() }}:</strong> {{ msg.content | safe }}</p>
+    <div class="container">
+        <div class="header">
+            <h2>Welcome to Aurora – Your Mental Health Chat Companion</h2>
         </div>
-      {% endfor %}
-          
-      <div id="typing-indicator" class="bot-msg typing-indicator" style="display: none;">
-        <p><strong>Bot:</strong> <em>Typing...</em></p></div>
-      </div>
+
+        <div class="auth-buttons">
+            <button onclick="location.href='/login'">Login</button>
+            <button onclick="location.href='/register'">Register</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type your message here..." required />
+            <button type="submit" id="send-btn">Send</button>
+        </form>
     </div>
 
-    <!-- Chat Input -->
-    <form id="chat-form">
-      <div class="input-box">
-        <input type="text" id="user-input" placeholder="How are you feeling today?" required />
-        <button type="submit" id="send-button">Send</button>
-      </div>
-    </form>
-
-  </div>
-
-  <div id="recommendations">
-  <h3>Your Self-Care Suggestions</h3>
-  <p id="emotion-summary">Loading...</p>
-  <ul id="self-care-suggestions"></ul>
-
-</div>
-
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
-
-  <!-- Firebase Configuration -->
-  <script src="{{ url_for('static', filename='firebase-config.js') }}"></script>
-
-  <!-- Custom Scripts -->
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
-
-  <!-- Inline JS -->
-  <script>
-  // Refresh button acts as delete chat history
-  document.getElementById("refreshButton").addEventListener("click", async () => {
-  try {
-    const user = firebase.auth().currentUser;
-    if (!user) {
-      alert("You must be logged in to refresh/delete chat history.");
-      return;
-    }
-
-    const idToken = await user.getIdToken(true);
-    const response = await fetch("/delete_chat_history", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + idToken,
-      },
-    });
-
-    const result = await response.json();
-    if (result.success) {
-      // Clear localStorage and chat UI
-      localStorage.removeItem("chat-history");
-      const chatBox = document.getElementById("chat-box");
-      if (chatBox) chatBox.innerHTML = "";
-
-      alert("Chat history deleted successfully.");
-      // Optional: reload the page
-      // location.reload();
-    } else {
-      console.error("Failed to delete chat history:", result.message);
-      alert("Failed to delete chat history.");
-    }
-  } catch (error) {
-    console.error("Error during refresh:", error);
-    alert("Error refreshing chat history.");
-  }
-});
-
-    // Toggle dropdown menu
-    function toggleMenu() {
-      const authMenu = document.getElementById("authMenu");
-      if (authMenu) {
-        authMenu.classList.toggle("hidden");
-      }
-    }
-
-    // Close dropdown menu if clicked outside
-    window.addEventListener("click", function (event) {
-      const authMenu = document.getElementById("authMenu");
-      if (!event.target.closest(".menu-button") && !event.target.closest("#authMenu")) {
-        if (authMenu && !authMenu.classList.contains("hidden")) {
-          authMenu.classList.add("hidden");
+    <script>
+        async function logout() {
+            try {
+                await fetch('/logout', { method: 'POST' });
+                window.location.href = '/login';
+            } catch (error) {
+                alert('Logout failed!');
+            }
         }
-      }
-    });
-  </script>
+
+        document.getElementById("chat-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const inputField = document.getElementById("user-input");
+            const message = inputField.value;
+            const chatBox = document.getElementById("chat-box");
+
+            if (!message) return;
+
+            appendMessage("user", message);
+            inputField.value = "";
+
+            const token = localStorage.getItem("idToken");
+
+            try {
+                const response = await fetch("/chat", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${token}`
+                    },
+                    body: JSON.stringify({ message })
+                });
+
+                const data = await response.json();
+
+                if (data.reply) {
+                    appendMessage("bot", data.reply);
+                } else {
+                    appendMessage("bot", "Sorry, I didn't understand that.");
+                }
+            } catch (error) {
+                appendMessage("bot", "Error connecting to the server.");
+            }
+        });
+
+        function appendMessage(sender, text) {
+            const chatBox = document.getElementById("chat-box");
+            const messageDiv = document.createElement("div");
+            const timestamp = new Date().toLocaleTimeString();
+
+            messageDiv.classList.add("message", sender === "user" ? "user-message" : "bot-message");
+
+            messageDiv.innerHTML = `
+                <div>${text}</div>
+                <div class="timestamp">${timestamp}</div>
+            `;
+
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
 </body>
 </html>
-
-

@@ -2,22 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chat History</title>
+    <title>Chat with Aurora</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
         }
 
-        .chat-container {
+        .container {
             max-width: 800px;
             margin: 40px auto;
             background-color: #fff;
-            padding: 20px;
             border-radius: 16px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .chat-window {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            background-color: #fafafa;
         }
 
         .chat-message {
@@ -53,55 +69,104 @@
             border-bottom-left-radius: 0;
         }
 
-        h2 {
-            text-align: center;
-            color: #444;
-            margin-bottom: 24px;
+        form {
+            display: flex;
+            gap: 10px;
         }
 
-        a {
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .mood-tracker {
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .mood-tracker button {
+            margin: 4px;
+            padding: 8px 12px;
+            font-size: 14px;
+            background-color: #eee;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .mood-tracker button:hover {
+            background-color: #ddd;
+        }
+
+        .logout-link {
             display: block;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 24px;
             text-decoration: none;
             color: #007BFF;
         }
 
-        a:hover {
+        .logout-link:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="chat-container">
-        <h2>🧠 Your Chat History</h2>
-        <!-- 🌤️ Mood Tracker added here -->
-        <div class="mood-tracker" style="margin: 20px 0;">
+    <div class="container">
+        <h2>🧠 Chat with Aurora</h2>
+
+        <div class="chat-window" id="chat-window">
+            {% if messages %}
+                {% for msg in messages %}
+                    <div class="chat-message {{ msg.role }}">
+                        <div class="chat-bubble">{{ msg.content | safe }}</div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No messages yet.</p>
+            {% endif %}
+        </div>
+
+        <form id="chat-form" method="POST" action="/chat">
+            <input type="text" name="user_input" id="user_input" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="mood-tracker">
             <p><strong>How are you feeling today?</strong></p>
             <button onclick="submitMood('happy')">😊 Happy</button>
             <button onclick="submitMood('sad')">😢 Sad</button>
             <button onclick="submitMood('angry')">😠 Angry</button>
             <button onclick="submitMood('anxious')">😟 Anxious</button>
         </div>
-        {% if messages %}
-            {% for msg in messages %}
-                <div class="chat-message {{ msg.role }}">
-                    <div class="chat-bubble">
-                        {{ msg.content | safe }}
-                    </div>
-                </div>
-            {% endfor %}
-        {% else %}
-            <p>No messages yet.</p>
-        {% endif %}
-        <a href="/">← Back to Chat</a>
+
+        <a class="logout-link" href="/logout">← Logout</a>
     </div>
-    <!-- ✅ JavaScript function for mood submission -->
+
     <script>
         function submitMood(mood) {
             fetch('/submit_mood', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json'
+                },
                 body: JSON.stringify({ mood: mood })
             })
             .then(response => response.json())
@@ -111,3 +176,4 @@
     </script>
 </body>
 </html>
+
